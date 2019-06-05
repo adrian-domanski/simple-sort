@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple Sort</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Nav filters -->
+    <nav class="filters">
+        <select class="category">
+            <option class="category__option" value="all">All</option>
+            <option class="category__option" value="car">Cars</option>
+            <option class="category__option" value="fruit">Fruits</option>
+            <option class="category__option" value="animal">Animals</option>
+        </select>
+
+        <select class="filter">
+            <option class="filter__option" selected value="null">Filter (default)</option>
+            <option class="filter__option" value="price">By price</option>
+            <option class="filter__option" value="name">By name</option>
+        </select>
+    </nav>
+
+    <div class="products-grid">
+
+        <!-- Cars -->
+        <figure class="grid-item active">
+            <img src="img/car4.jpg" alt="car" data-name="nissan" data-price="200000" data-category="car all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/car2.jpg" alt="car" data-name="bmw" data-price="300000" data-category="car all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/car3.jpg" alt="car" data-name="porsche" data-price="400000" data-category="car all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/car1.jpg" alt="car" data-name="dodge" data-price="100000" data-category="car all"
+                class="grid-item__img">
+        </figure>
+
+        <!-- Animals -->
+
+        <figure class="grid-item active">
+            <img src="img/animal1.jpg" alt="animal" data-name="puppy" data-price="3000" data-category="animal all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/animal2.jpg" alt="animal" data-name="cats" data-price="2000" data-category="animal all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/animal3.jpg" alt="animal" data-name="rabbit" data-price="100" data-category="animal all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/animal4.jpg" alt="animal" data-name="dog" data-price="200" data-category="animal all"
+                class="grid-item__img">
+        </figure>
+
+        <!-- Fruits -->
+
+        <figure class="grid-item active">
+            <img src="img/fruits1.jpg" alt="fruit" data-name="bananas" data-price="20" data-category="fruit all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/fruits2.jpg" alt="fruit" data-name="apples" data-price="11" data-category="fruit all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/fruits3.jpg" alt="fruit" data-name="oranges" data-price="30" data-category="fruit all"
+                class="grid-item__img">
+        </figure>
+
+        <figure class="grid-item active">
+            <img src="img/fruits4.jpg" alt="fruit" data-name="cherries" data-price="10" data-category="fruit all"
+                class="grid-item__img">
+        </figure>
+    </div>
+
+
+    <!-- Sorting -->
+    <script src="sort.js"></script>
+    <script src="filter.js"></script>
+</body>
+
+</html>
